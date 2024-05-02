@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const maisonListe: {
+interface MaisonRecord {
     adresse: string;
     collectionId: string;
     collectionName: string;
@@ -13,8 +13,9 @@ const maisonListe: {
     prix: number;
     surface: number;
     updated: string;
-}[] = [
-  {
+}
+const maisonsListe: MaisonRecord[] =
+  [{
         "adresse": "2821 Lake Sevilla, Palm Harbor, TX",
         "collectionId": "sidpkt9hmbfwoeb",
         "collectionName": "maison",
