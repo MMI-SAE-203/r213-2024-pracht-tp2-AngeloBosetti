@@ -11,12 +11,12 @@ const props = defineProps<MaisonResponse<any>>()
     <div class="self-stretch flex-grow-0 flex-shrink-0 h-[200px]">
       <div
         class="w-[352px] h-[200px] absolute left-[-0.5px] top-[-0.5px] rounded-tl-lg rounded-tr-lg bg-gray-500"
-      ></div>
+      ><ImgPb class="w-[352px] h-[235px] absolute left-[-0.5px] top-[-24.5px] object-cover" :record="props" :filename="images[0]" />
+    </div>
       
-      <ImgPb :record="props" :filename="images[0]"
+      
         
-        class="w-[352px] h-[235px] absolute left-[-0.5px] top-[-24.5px] object-cover"
-      />
+     
     </div>
     <div
       class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4 px-5 py-7"
